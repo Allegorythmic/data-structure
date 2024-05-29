@@ -1,8 +1,10 @@
 # DataStructure project
 
-We aim to implement the below list of data structure for training purpose.
+We implement the below data structures.
 
 ## Array
+
+A collection of elements identified by index or key. The elements are stored in contiguous memory locations.
 
 ### Linked List
 
