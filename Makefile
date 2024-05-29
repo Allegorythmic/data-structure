@@ -1,4 +1,4 @@
-.PHONY: test clean coverage
+.PHONY: test clean coverage install all
 
 install:
     pip install -r requirements.txt
@@ -7,7 +7,7 @@ test:
     pytest
 
 coverage:
-    pytest --cov=src/tests --cov-report=term-missing
+    pytest --cov=src --cov-report=term-missing
 
 clean:
     find . -type f -name '*.pyc' -delete
