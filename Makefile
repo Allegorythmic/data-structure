@@ -3,6 +3,9 @@
 install:
 	pip install -r requirements.txt
 
+test:
+	pytest
+
 coverage:
 	pytest --cov=src --cov-report=term-missing --cov-report=xml
 
