@@ -2,7 +2,8 @@
 
 ## Overview
 
-This project provides a custom data structure class implementations. The project includes a suite of unit tests to ensure the functionality and correctness of the classes, and uses `pytest` for testing and coverage reporting.
+This project provides a custom data structure class implementations. The project includes a suite of unit tests to 
+ensure the functionality and correctness of the classes, and uses `pytest` for testing and coverage reporting.
 
 ## Features
 
@@ -60,6 +61,13 @@ To generate a test coverage report, run:
 make coverage
 ```
 
+### Linting
+
+To impove the quality, maintainability and readability of the code we use Lint:
+```shell
+make lint
+```
+
 ### Cleaning Up
 
 To clean up the project directory (remove .pyc files and __pycache__ directories), run:
@@ -90,7 +98,8 @@ project/
 
 ### Continuous Integration
 
-The project is set up with GitHub Actions for continuous integration. The workflow is defined in .github/workflows/python-package.yml and includes steps to:
+The project is set up with GitHub Actions for continuous integration. 
+The workflow is defined in .github/workflows/python-package.yml and includes steps to:
 
 - Set up Python
 - Install dependencies
