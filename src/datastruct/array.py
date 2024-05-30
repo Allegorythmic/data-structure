@@ -1,6 +1,7 @@
 class Array:
     """
-    A custom array class that enforces type consistency and provides basic array operations.
+    A custom array class that enforces type consistency
+    and provides basic array operations.
     """
 
     def __init__(self, data_type):
@@ -20,7 +21,8 @@ class Array:
         :raises TypeError: If the value is not of the specified data type.
         """
         if not isinstance(value, self.data_type):
-            raise TypeError(f"Expected {self.data_type.__name__}, got {type(value).__name__}")
+            raise TypeError(f"Expected {self.data_type.__name__}, "
+                            f"got {type(value).__name__}")
 
     def append(self, value):
         """
@@ -53,7 +55,8 @@ class Array:
         """
         Removes and returns the element at the specified index.
 
-        :param index: The index of the element to pop. Defaults to -1 (last element).
+        :param index: The index of the element to pop.
+                      Defaults to -1 (last element).
         :returns: The element removed from the array.
         """
         return self.array.pop(index)
