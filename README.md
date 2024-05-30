@@ -75,27 +75,6 @@ To clean up the project directory (remove .pyc files and __pycache__ directories
 make clean
 ```
 
-### Project Structure
-
-```markdown
-project/
-├── src/
-│   ├── __init__.py
-│   └── datastruct/
-│       ├── __init__.py
-│       └── array.py
-├── tests/
-│   ├── __init__.py
-│   └── test_array.py
-├── .github/
-│   └── workflows/
-│       └── python-package.yml
-├── pytest.ini
-├── Makefile
-├── requirements.txt
-└── README.md
-```
-
 ### Continuous Integration
 
 The project is set up with GitHub Actions for continuous integration. 
