@@ -1,13 +1,13 @@
-.PHONY: test clean coverage install all
+.PHONY: test clean coverage install lint all
 
 install:
 	pip install -r requirements.txt
 
-test:
-	pytest
-
 coverage:
-	pytest --cov=src --cov-report=term-missing
+	pytest --cov=src --cov-report=term-missing --cov-report=xml
+
+lint:
+	flake8 src src/tests
 
 clean:
 	@echo "Cleaning up..."
