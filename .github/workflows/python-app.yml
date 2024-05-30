@@ -21,5 +21,15 @@ jobs:
       run: make clean
     - name: Run tests and generate coverage report
       run: make coverage
+    - name: Upload coverage report
+      uses: actions/upload-artifact@v2
+      with:
+        name: coverage-report
+        path: coverage.xml
     - name: Lint code
       run: make lint
+    - name: Upload test results
+      uses: actions/upload-artifact@v2
+      with:
+        name: test-results
+        path: src/tests
