@@ -1,7 +1,6 @@
 from datastruct.linked_list.double import DoublyLinkedList
 import io
 import sys
-import pytest
 
 
 def test_append():
@@ -53,7 +52,7 @@ def test_delete_non_existent_value():
 def test_delete_empty_list():
     dll = DoublyLinkedList()
     dll.delete_value("A")
-    assert dll.head == None
+    assert dll.head is None
 
 
 def test_print_list():

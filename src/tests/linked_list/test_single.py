@@ -60,7 +60,7 @@ def test_delete_non_existent_value():
 def test_delete_empty_list():
     dll = SinglyLinkedList()
     dll.delete_value("A")
-    assert dll.head == None
+    assert dll.head is None
 
 
 def test_print_list_with_value():
