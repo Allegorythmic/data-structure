@@ -6,6 +6,8 @@ class SinglyLinkedList:
         self.head = None
 
     def append(self, data):
+        if not data:
+            return
         new_node = Node(data)
         if not self.head:
             self.head = new_node
