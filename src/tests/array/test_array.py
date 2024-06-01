@@ -1,5 +1,5 @@
 import pytest
-from datastruct.array import Array
+from datastruct.array.array import Array
 
 
 def test_array_initialization():
